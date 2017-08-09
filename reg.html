@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>jqFormCheck</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/simple-reg.css">
+</head>
+<body>
+    <header>
+        表单验证
+    </header>
+    <div class="reg">
+        <form id="regForm" action="">
+            <ul>
+                <li><label for="">手机号</label>
+                <input id="phone" placeholder="请输入您注册的手机号"
+                       data-yz-regexp="^((13|15|18|14|17)\d{9})$"
+                       data-yz-regexp-message="手机号格式不正确"
+                       data-yz-rightlength=11
+                       data-yz-rightlength-message="手机号为11位"
+                        type="text"></li>
+                <li><label for="">设密码</label>
+                <input placeholder="请输入密码"
+                       data-yz-regexp="\w+"
+                       data-yz-regexp-message="密码格式不正确"
+                       type="text"></li>
+                <li><label style="margin-right:13px;" for="">验证码</label><input style="width:140px;" placeholder="请输入验证码" type="text"><div class="get-code"><a rel="nofollow href="">获取验证码</a></div></li>
+            </ul>
+        </form>
+        <div id="regBtn" class="reg-btn">立即注册</div>
+        <div class="line"><div class="reged">已有账号</div></div>
+        <a rel="nofollow" class="login-btn" href="">立即登录</a>
+    </div>
+    <div class='msg'></div>
+    <script src="http://static.huangye88.cn/js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        function error (msg){
+            $(".msg").html(msg).show('fadeIn').delay(1000).hide('fadeOut')
+        }
+        $('.reg').check({
+            Event:'blur' //默认input
+        })
+    </script>
+</body>
+</html>

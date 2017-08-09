@@ -1,0 +1,123 @@
+html,body,ul,li,div,p,textarea {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    font: 14px/2em PingFang SC Medium,microsoft yahei,arial,verdana,helvetica,sans-serif;
+    background-color: #fff;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header img {
+    display: block;
+    width: 125px;
+    margin:54px auto 0;
+}
+header {
+    height: 171px;
+    background: url(../img/bg.png) no-repeat;
+    border:1px solid rgba(0,0,0,0);
+    font-size: 20px;
+    line-height: 171px;
+    text-align: center;
+    color:#03a9f4;
+}
+.advantage {
+    color:#666;
+    text-align: center;
+    margin-top: 4px;
+}
+.reg ul li {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+}
+.reg ul li p {
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+.reg ul li label {
+    margin:0 10px;
+}
+.reg ul li input {
+    border:0;
+    outline: none;
+}
+.reg ul li input::-webkit-input-placeholder {
+    color:#ccc;
+}
+.reg ul li input::-moz-placeholder {
+    color:#ccc;
+}
+.reg-btn {
+    margin:10px 10px 0;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 3px;
+    background-color: #f60;
+    text-align: center;
+    font-size: 16px;
+    color:#fff;
+}
+.get-code {
+    float: right;
+    width: 34.4%;
+    text-align: center;
+    border-left: 1px solid #e6e6e6;
+}
+.get-code a {
+    color:#4a90e2;
+}
+.login-btn {
+    display: block;
+    width: 114px;
+    height: 40px;
+    border:1px solid #f60;
+    line-height: 40px;
+    text-align: center;
+    margin:0 auto;
+    color:#f60;
+    border-radius: 3px;
+}
+.line {
+    position: relative;
+    height:1px;
+    background-color: #e6e6e6;
+    width: 100%;
+    zoom:1;
+    margin:42px 0;
+}
+.reged {
+    position: absolute;
+    width: 78px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    background-color: #fff;
+    color:#999;
+}
+.msg {
+    display: none;
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(0,0,0,.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    border-radius: 5px;
+}
